@@ -20,11 +20,12 @@ df_41_64 = df[(df['Exit_Year'] >= 1941) & (df['Exit_Year'] <= 1964)]
 df_65_90 = df[(df['Exit_Year'] >= 1965) & (df['Exit_Year'] <= 1990)]
 
 
-'''df_65_90.plot.scatter(x='Exit_Year', y='Age')
+df_65_90.plot.scatter(x='Exit_Year', y='Age')
 plt.xlabel('Year of Exit')
 plt.ylabel('Age')
 plt.title('Year of Exit against Age (1965-1990)')
-plt.show()'''
+plt.show()
+# I just switch the numbers in df_65_90 for each graph, so I don't print out all the graphs at the same time.
 
 df_mean = df.groupby('Exit_Year')['Age'].mean()
 

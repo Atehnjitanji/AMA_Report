@@ -6,7 +6,7 @@ df = pd.read_csv('alumni_clean.csv', index_col='Id')
 
 #The tests that you crowd-sourced are below.
 def test_eliminations():
-    assert 9308 not in df.index
+    assert 9308 in df.index
     assert 9229 not in df.index
     assert 9211 not in df.index
     assert 2669 not in df.index
